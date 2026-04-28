@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starry Gomoku - A Gomoku Puzzle Game</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #0a0e27;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background: linear-gradient(180deg, #0a0e27 0%, #1a1f4e 100%);
+        }
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            color: #f0c040;
+            margin-bottom: 8px;
+            text-shadow: 0 0 20px rgba(240, 192, 64, 0.3);
+        }
+        .hero .subtitle {
+            font-size: 18px;
+            color: #a0a8d0;
+        }
+        .screenshots {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 30px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .screenshots img {
+            width: 200px;
+            border-radius: 12px;
+            border: 2px solid #2a2f5e;
+        }
+        .features {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px 40px;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 28px;
+            color: #f0c040;
+            margin-bottom: 30px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .feature-card {
+            background: #141842;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            border: 1px solid #2a2f5e;
+        }
+        .feature-card .icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+        .feature-card h3 {
+            font-size: 18px;
+            color: #f0c040;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            font-size: 14px;
+            color: #a0a8d0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #5a5e8a;
+            font-size: 13px;
+            border-top: 1px solid #1a1f4e;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Starry Gomoku</h1>
+        <p class="subtitle">A Gomoku Puzzle Game</p>
+    </div>
+
+    <div class="screenshots">
+        <img src="screenshots_65/01_menu.png" alt="Main Menu">
+        <img src="screenshots_65/04_level_select.png" alt="Level Select">
+        <img src="screenshots_65/02_early_gameplay.png" alt="Early Gameplay">
+        <img src="screenshots_65/03_gameplay.png" alt="Mid Gameplay">
+        <img src="screenshots_65/05_gameover.png" alt="Try Again">
+    </div>
+
+    <div class="features">
+        <h2>Game Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">⭐</div>
+                <h3>150 Puzzle Levels</h3>
+                <p>Progressively challenging Gomoku puzzles across 150 unique levels. Master strategy and logic as you advance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon"></div>
+                <h3>Puzzle-Based Gomoku</h3>
+                <p>Not a traditional Gomoku — each level is a carefully designed puzzle. Place your pieces strategically to form five-in-a-row.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">↩️</div>
+                <h3>Undo & Hint System</h3>
+                <p>Stuck on a level? Use Undo to reverse moves or Hint to get guidance. Practice makes perfect.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🌌</div>
+                <h3>Space-Themed Design</h3>
+                <p>Enjoy a beautiful cosmic aesthetic with stars, planets, and nebulae. Relaxing visuals for focused gameplay.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📱</div>
+                <h3>Offline & Free</h3>
+                <p>No ads, no in-app purchases, no login required. Play anytime, anywhere — completely free.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon"></div>
+                <h3>Star Rating System</h3>
+                <p>Complete levels efficiently to earn up to 3 stars per level. Aim for a perfect score across all 150 levels.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Starry Gomoku. All rights reserved.</p>
+    </div>
+</body>
+</html>
